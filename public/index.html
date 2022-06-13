@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World DApp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+    <h1>Trading Bot&nbsp;&nbsp;</h1><br>
+    <div class="row">
+        <div style="margin-bottom: 20px;">
+            <a onclick="start()" class="btn btn-primary" id="start_button">Start</a>
+            <a onclick="stop()" class="btn btn-primary" id="stop_button" disabled="true">Stop</a>
+            <!-- <input type="number" min="1" id="set_time" /><a onclick="setTime()" class="btn btn-primary">Set Refresh Time</a>
+            <input type="number" min="0" id="set_amount" /><a onclick="setAmount()" class="btn btn-primary">Set Trading Amount</a> -->
+        </div>
+        <table class="table table-bordered" style="min-width: 900px; overflow: auto;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Pooled BNB</th>
+                    <th>BNB-PERP</th>
+                    <th>Difference</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+    <div style="height: 300px;">
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"
+    integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./mytoken.js"></script>
+<script src="./abi.js"></script>
+
+</html>
